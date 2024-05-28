@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.1.1 (Python 3.12.3 on win32)" generated="20240528 16:04:44.362" rpa="false" schemaversion="4">
+<suite id="s1" name="Robot Interactive Console" source="c:\Users\Thais\.vscode\extensions\robocorp.robotframework-lsp-1.12.0\src\robotframework_ls\vendored\robotframework_interactive\robot_interactive_console.robot">
+<test id="s1-t1" name="Default Task/Test" line="5">
+<kw name="Interpreter Main Loop" library="MainLoop">
+<kw name="Dado que o usuário acessou a tela inicial de sua conta">
+<msg timestamp="20240528 16:04:45.551" level="FAIL">No keyword with name 'Dado que o usuário acessou a tela inicial de sua conta' found.</msg>
+<status status="FAIL" starttime="20240528 16:04:45.550" endtime="20240528 16:04:45.551"/>
+</kw>
+<kw name="Quando acessar a funcionalidade para indicar amigos no canto superior direito da tela">
+<status status="NOT RUN" starttime="20240528 16:04:45.555" endtime="20240528 16:04:45.555"/>
+</kw>
+<kw name="Então terá acesso a tela de indicação de amigos">
+<status status="NOT RUN" starttime="20240528 16:04:45.558" endtime="20240528 16:04:45.558"/>
+</kw>
+<status status="PASS" starttime="20240528 16:04:44.440" endtime="20240528 16:04:47.064"/>
+</kw>
+<status status="PASS" starttime="20240528 16:04:44.438" endtime="20240528 16:04:47.065"/>
+</test>
+<status status="PASS" starttime="20240528 16:04:44.364" endtime="20240528 16:04:47.066"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Robot Interactive Console">Robot Interactive Console</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
