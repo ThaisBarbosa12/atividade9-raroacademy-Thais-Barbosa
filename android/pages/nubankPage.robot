@@ -696,9 +696,9 @@ Então terá acesso a tela de informações da área Cobrar
 Então visualizará a mensagem: Qual valor voce quer receber? Não especificar um valor
     Element Should Be Visible    ${INPUT_COBRAR}
     Page Should Contain Element    ${INPUT_COBRAR}
-    Element Attribute Should Match
-    ...    ${INPUT_COBRAR}
-    ...    hint
+    AppiumLibrary.Element Attribute Should Match    
+    ...    ${INPUT_COBRAR}    
+    ...    hint    
     ...    Qual valor você quer receber?
     ...    Não especificar um valor >
 
