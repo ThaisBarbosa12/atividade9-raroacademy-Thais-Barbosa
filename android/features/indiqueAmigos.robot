@@ -6,7 +6,7 @@ Test Teardown       Teardown
 
 
 *** Test Cases ***
-CT001 - Acessar a funcionalidade para indicar amigos
+CT001 - Deve ser possível acessar acessar a funcionalidade para indicar amigos
     Dado que o usuário acessou a tela inicial de sua conta
     Quando acessar a funcionalidade para indicar amigos no canto superior direito da tela
     Então terá acesso a tela de indicação de amigos
@@ -21,7 +21,7 @@ CT003 - Deve ser possível visualizar uma mensagem com informações sobre cada 
 
 CT004 - Deve ser possível visualizar um botão para indicar amigos
     Dado que o usuário acessou a tela de indicação de amigos
-    Então visualizará uma botão com descrição: indicar amigos
+    Então visualizará um botão com descrição: indicar amigos
 
 CT005 - Deve ser possível fechar a tela de indição com o botão X no canto superior esquerdo da tela
     Dado que o usuário acessou a tela de indicação de amigos
