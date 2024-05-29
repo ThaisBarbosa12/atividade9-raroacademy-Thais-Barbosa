@@ -102,6 +102,8 @@ ${TÍTULO_INVISTA}               xpath=//android.view.View[contains(@content-des
 ${MSG_INVISTA_1}                xpath=//android.view.View[contains(@content-desc,"Estamos convidando alguns clientes do Nubank")]
 ${MSG_INVISTA_2}                xpath=//android.view.View[contains(@content-desc,"Além de não pagar nada para abrir a conta")]
 ${BTN_SETA_INVISTA}             xpath=//android.widget.Button
+${FUNÇÃO_INDIQUE_AMIGOS}        xpath=//android.view.View[contains(@content-desc,"Indique seus amigos")]
+${BOTÃO_INDICAR_AMIGOS}         xpath=//android.view.View[@content-desc="Indicar amigos"]
 
 
 *** Keywords ***
@@ -257,6 +259,9 @@ Então deverá visualizar a funcionalidade Empréstimo com o valor disponível
     Verifica se o contentDesc contains text    ${FUNÇÃO_EMPRÉSTIMO}    Valor disponível de até
     Verifica se o contentDesc contains text    ${FUNÇÃO_EMPRÉSTIMO}    R$ 10.000,00
 
+E deverá ser possível acessar a funcionalidade empréstimos
+    Click Element    ${FUNÇÃO_EMPRÉSTIMO}
+
 Então deverá visualizar a funcionalidade Investimentos com uma opção para conhecer sobre
     Swipe By Percent    50    70    50    10
     Wait Until Element Is Visible    ${FUNÇÃO_INVESTIMENTOS}
@@ -278,6 +283,7 @@ Então deverá visualizar a funcionalidade Seguro de Vida
     Verifica se o contentDesc contains text
     ...    ${FUNÇÃO_SEGURO_VIDA}
     ...    Conheça Nubank Vida: um seguro simples e que cabe no bolso
+    Click Element    ${FUNÇÃO_SEGURO_VIDA}
 
 Então deverá visualizar a funcionalidade Descubra mais
     Swipe By Percent    50    90    50    5
@@ -286,18 +292,35 @@ Então deverá visualizar a funcionalidade Descubra mais
     Verifica se o contentDesc contains text    ${FUNÇÃO_DESCUBRA_MAIS}    Descubra mais
 
 Então deverá visualizar a funcionalidade WhatsApp
-    Swipe By Percent    50    90    50    0
+    Swipe By Percent    50    90    50    10
+    Swipe By Percent    50    90    50    50
     Wait Until Element Is Visible    ${FUNÇÃO_WHATSAPP}
     Page Should Contain Element    ${FUNÇÃO_WHATSAPP}
     Verifica se o contentDesc contains text    ${FUNÇÃO_WHATSAPP}    Novo
     Verifica se o contentDesc contains text    ${FUNÇÃO_WHATSAPP}    Pagamentos seguros, rápidos e sem tarifa
     Verifica se o contentDesc contains text    ${FUNÇÃO_WHATSAPP}    A experiência Nubank sem nem sair da conversa
+    Click Element    ${FUNÇÃO_WHATSAPP}
 
 E uma opção de acesso para conhecer mais sobre a funcionalidade
-    Swipe By Percent    50    40    50    10
     Wait Until Element Is Visible    ${BOTÃO_QUERO_CONHECER}
     Page Should Contain Element    ${BOTÃO_QUERO_CONHECER}
     Verifica se o contentDesc contains text    ${BOTÃO_QUERO_CONHECER}    Quero conhecer
+    Click Element    ${BOTÃO_QUERO_CONHECER}
+
+Então deverá visualizar a funcionalidade Indique seus amigos
+    Swipe By Percent    50    90    50    10
+    Swipe By Percent    50    90    50    50
+    Swipe By Percent    70    90    20    90
+    Wait Until Element Is Visible    ${FUNÇÃO_INDIQUE_AMIGOS}
+    Page Should Contain Element    ${FUNÇÃO_INDIQUE_AMIGOS}
+    Verifica se o contentDesc contains text    ${FUNÇÃO_INDIQUE_AMIGOS}    Indique seus amigos
+    Verifica se o contentDesc contains text
+    ...    ${FUNÇÃO_INDIQUE_AMIGOS}
+    ...    Mostre aos seus amigos como é fácil ter uma vida sem burocracia.
+
+E um botão de acesso para ser direcionado a tela de indicar amigos
+    Verifica se o contentDesc contains text    ${BOTÃO_INDICAR_AMIGOS}    Indicar amigos
+    Click Element    ${BOTÃO_INDICAR_AMIGOS}
 
 Então deverá visualizar a funcionalidade Pix
     Element Should Be Visible    ${CARROSSEL_1}
@@ -324,11 +347,15 @@ Então deverá visualizar a funcionalidade Depositar
     Verifica se o contentDesc contains text    ${BOTÃO_DEPOSITAR}    Depositar
 
 Então deverá visualizar a funcionalidade Emprestimos
-    Swipe By Percent    85    50    15    50
+    Swipe By Percent    85    50    13    50
     Wait Until Page Contains Element    ${CARROSSEL_1}
     Element Should Be Visible    ${CARROSSEL_1}
     Element Should Be Visible    ${BOTÃO_EMPRÉSTIMOS}
     Verifica se o contentDesc contains text    ${BOTÃO_EMPRÉSTIMOS}    Empréstimos
+
+E deverá ser possível acessar a funcionalidade pelo botão empréstimos
+    Element Should Be Visible    ${CARROSSEL_1}
+    Click Element    ${CARROSSEL_1}
 
 Então deverá visualizar a funcionalidade Recarga de Celular
     Swipe By Percent    85    50    15    50
@@ -384,6 +411,10 @@ Então deverá visualizar um card com as informações de valor disponível para
     Page Should Contain Element    ${CARD_EMPRÉSTIMO_DISP}
     Verifica se o contentDesc contains text    ${CARD_EMPRÉSTIMO_DISP}    Você tem R$ 10.000,00
     Verifica se o contentDesc contains text    ${CARD_EMPRÉSTIMO_DISP}    disponíveis para empréstimo
+
+E deverá ser possível acessar o card de empréstimos
+    Element Should Be Visible    ${CARD_EMPRÉSTIMO_DISP}
+    Click Element    ${CARD_EMPRÉSTIMO_DISP}
 
 Então deverá visualizar um card com as opções para guardar dinheiro
     Swipe By Percent    80    80    20    80
