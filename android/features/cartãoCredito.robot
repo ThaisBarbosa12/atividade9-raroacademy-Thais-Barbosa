@@ -23,27 +23,27 @@ CT004 - Deve ser possível visualizar o botão de acesso para funcionalidade Pag
     Dado que o usuário acessou a tela Cartão de Crédito
     Então visualizará o botão de acesso para funcionalidade Pagar fatura
 
-CT004 - Deve ser possível visualizar o botão de acesso para funcionalidade Resumo de faturas
+CT005 - Deve ser possível visualizar o botão de acesso para funcionalidade Resumo de faturas
     Dado que o usuário acessou a tela Cartão de Crédito
     Então visualizará o botão de acesso para funcionalidade Resumo de faturas
 
-CT004 - Deve ser possível visualizar o botão de acesso para funcionalidade Ajustar limites
+CT006 - Deve ser possível visualizar o botão de acesso para funcionalidade Ajustar limites
     Dado que o usuário acessou a tela Cartão de Crédito
     Então visualizará o botão de acesso para funcionalidade Ajustar limites
 
-CT004 - Deve ser possível visualizar o botão de acesso para funcionalidade Cartão virtual
+CT007 - Deve ser possível visualizar o botão de acesso para funcionalidade Cartão virtual
     Dado que o usuário acessou a tela Cartão de Crédito
     Então visualizará o botão de acesso para funcionalidade Cartão virtual
 
-CT004 - Deve ser possível visualizar o botão de acesso para funcionalidade Bloquear cartão
+CT008 - Deve ser possível visualizar o botão de acesso para funcionalidade Bloquear cartão
     Dado que o usuário acessou a tela Cartão de Crédito
     Então visualizará o botão de acesso para funcionalidade Bloquear cartão
 
-CT004 - Deve ser possível visualizar o botão de acesso para funcionalidade Indicar amigos
+CT009 - Deve ser possível visualizar o botão de acesso para funcionalidade Indicar amigos
     Dado que o usuário acessou a tela Cartão de Crédito
     Então visualizará o botão de acesso para funcionalidade Indicar amigos
 
-CT005 - Deve ser possível visualizar o historico da fatura e suas informações
+CT010 - Deve ser possível visualizar o historico da fatura e suas informações
     Dado que o usuário acessou a tela Cartão de Crédito
     Então visualizará o historico da fatura e suas informações
 
@@ -52,10 +52,10 @@ CT011 - Deve ser possível retornar a tela incial com o botão < no canto superi
     Quando acessar o botão < localizado no canto superior esquerdo da tela
     Então o usuário deverá ser redirecionado para tela inical onde acessou a função cartão de crédito
 
-CT011 - Deve ser possível visualizar o botão de busca no canto superior direito da tela
+CT012 - Deve ser possível visualizar o botão de busca no canto superior direito da tela
     Dado que o usuário acessou a tela Cartão de Crédito
     Então deverá visualizar o botão de acesso para busca no canto superior direito da tela
 
-CT012 - Deve ser possível visualizar o botão de dúvidas no canto superior direito da tela
+CT013 - Deve ser possível visualizar o botão de dúvidas no canto superior direito da tela
     Dado que o usuário acessou a tela Cartão de Crédito
     Então deverá visualizar o botão de acesso para dúvidas sobre Cartão de Crédito
